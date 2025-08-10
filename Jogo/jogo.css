@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+*{
+
+  margin: 0;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: 'Pixelify Sans';
+  font-size: 1rem;
+
+}
+
+input{
+
+  opacity: 0;
+  position: absolute;
+  left: 99999999;
+  top: 9999999;
+  
+
+}
+
+body{
+  
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  overflow: hidden;
+  width: 100dvw;
+  
+}
+
+#menuDificuldade{
+  
+  overflow: hidden;
+  position: relative;
+  height: 70dvh;
+  border-radius: 1rem;
+  width: 60dvw;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  
+}
+
+#menuDificuldade h1{
+  
+  font-size: 1.5rem;
+  
+  
+}
+
+#lava {
+  
+  width: 100dvw;
+  height: 15dvh;
+  align-self: end;
+  padding: 0;
+  box-shadow: border-box;
+  
+}
+
+#parede {
+  
+  background: url(./imgs/parede.png) center/ cover no-repeat;
+  
+}
+
+#pessoa{
+  
+  background: url(./imgs/caindo.png) center/ contain no-repeat;
+  width: 5%;
+  height: 7%;
+  position: absolute;
+  top: 30px;
+  justify-self: center;
+  z-index: -1;
+  
+}
+
+#letreiroPalavra{
+
+  color: #a1a998;
+  display: grid;
+
+}
+
+#letreiroPlayer{
+
+  display: grid;
+  grid-template-rows: 1fr;
+  place-content: center;
+  width: 100dvw;
+
+}
+
+#hard{
+  
+  position: absolute;
+  font-weight: bolder;
+  top: 2%;
+  left: 60%;
+  transform: rotate(-40deg);
+  background: none;
+  color: black;
+  
+}
+
+#final{
+  
+  display: grid;
+  align-items: center;
+  z-index: 1;
+  height: 50vh;
+  width: 50vw;
+  
+}
+
+#final div{
+  
+  height: 20%;
+  
+}
+
+#cronometro{
+  
+  color: #a1a998;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  
+}
+
+#btnsTemplFinal{
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.btnsfinal{
+  
+  color: #a1a998;
+  background: url(./imgs/obsidian.jpg);
+  border-radius: 1rem;
+  
+}
+
+.dificuldades{
+  
+  height: 3rem;
+  border-radius: 1rem;
+  width: 5rem;
+  padding: 0;
+  align-self: end;
+  border: none;
+  color:white;
+  background: url(./imgs/obsidian.jpg);
+  
+}
+
+.Certa{
+  
+  font-size: 2rem;
+  place-self: center;
+  
+}
+
+.letra{
+ 
+  place-self: end;
+  font-size: 2rem;
+  color: #a1a998;
+
+}
+
+
+@media screen and (max-height: 767px){
+  
+  #hard{
+  
+    top: 15%;
+    left: 75%;
+  
+  }
+
+}
